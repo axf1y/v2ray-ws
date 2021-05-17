@@ -4,15 +4,14 @@ forked from v2ray/install
 
 **Usages:**
 ```bash
-docker pull esme518/docker-v2ray-ws
-docker run --restart=always -d -p 80:80 -e PORT=80 -e UUID=<your-uuid> esme518/docker-v2ray-ws
+docker run -d --restart=always -p 80:80 -e PORT=80 -e UUID=<your-uuid> -e ALTERID=2 -e WSPATH=/css esme518/docker-v2ray-ws
 ```
 
 **Configs:**
 
-| ITEM    | VALUE |
-| :-----: | :---: |
-| Port    | 80    |
-| UUID    | -     |
-| AlterID | 4     |
-| WS-Path | /     |
+| ENV     | DEFAULT |
+| :-----: | :-----: |
+| Port    | 80      |
+| UUID    | -       |
+| AlterID | 2       |
+| WS-Path | /css    |
