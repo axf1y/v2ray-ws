@@ -1,15 +1,13 @@
-:whale: Dockerfiles for [V2Ray](https://github.com/v2fly/v2ray-core) with WebSocket
+# :whale: V2Ray with WebSocket
 
-forked from v2ray/install
-
-**Usages:**
+## Usages
 ```bash
-docker run -d --restart=always -p 80:80 -e PORT=80 -e UUID=<your-uuid> -e ALTERID=2 -e WSPATH=/css esme518/docker-v2ray-ws
+docker run -d --restart=always -p 80:80 -e PORT=80 -e UUID=<your-uuid> -e ALTERID=2 -e WSPATH=/css whoim/v2ray-ws:latest
 ```
 
-**Configs:**
+## Environments
 
-| ENV     | DEFAULT |
+| NAME    | VALUE   |
 | :-----: | :-----: |
 | Port    | 80      |
 | UUID    | -       |
